@@ -41,9 +41,9 @@ need to do:
 #### store
 
 - Add a thunk `action creator` to add a post to the database using the POST
-  route you created. Make sure you export it. Remember a post will need a method
-  key a headers key with the Content-Type of 'application/json' and a body
-  key that uses `JSON.stringify` to send the information.
+  route you created. Make sure you export it. Remember a post will need: a
+  method key, a headers key with the Content-Type of 'application/json' and a
+  body key that uses `JSON.stringify` to send the information.
 
 - Add a regular `action creator` which should receive the information from the
   thunk action creator and use it as the `payload`.
@@ -56,6 +56,6 @@ need to do:
 #### component
 
 - Create a form in the **CreateTweet.js** file's `CreateTweet` component.
-- use local state for the tweet information
-- use a `handleSubmit` function to check if the tweet is empty and if it isn't
+- Use local state for the tweet information
+- Use a `handleSubmit` function to check if the tweet is empty. If it isn't,
   dispatch the tweet using the thunk action creator.
