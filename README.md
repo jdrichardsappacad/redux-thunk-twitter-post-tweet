@@ -59,3 +59,4 @@ need to do:
 - Use local state for the tweet information
 - Use a `handleSubmit` function to check if the tweet is empty. If it isn't,
   dispatch the tweet using the thunk action creator.
+- Uncomment the `hr` and the `CreateTweet` Component in the **App.js** file.

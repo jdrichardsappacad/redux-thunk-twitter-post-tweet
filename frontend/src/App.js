@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <TweetList />
-      <hr />
-      <CreateTweet />
+      {/* <hr />
+      <CreateTweet /> */}
     </>
   );
 }
