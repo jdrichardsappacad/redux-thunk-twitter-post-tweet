@@ -6,7 +6,7 @@ Take a moment to look through all of the backend code.
 
 ## Getting started
 
-1. Clone this repository
+1. `cd` into the __backend__ directory
 2. Install dependencies with `npm install`
 3. Create a **.env** file based on the example with proper settings for your
    local environment
@@ -30,20 +30,22 @@ Take a moment to look through all of the backend code.
 
 ## FRONTEND
 
-In the fronted folder, you are going to add all the pieces to POST a fetch call
-to the backend and add a tweet to the database. If successful, the browser
-should automatically update the page based on the `useSelector` that was already
-created in the videos.
+In the frontend folder, you are going to add all the pieces to POST a fetch call
+to the backend, which will subsequently add a tweet to the database. If
+successful, the browser should automatically update the page based on the
+`useSelector` that was already created in the videos.
 
 Without giving you the steps this time here is a barebones checklist of what you
 need to do:
 
 #### store
 
-- Add a thunk `action creator` to add a post to the database using the POST
-  route you created. Make sure you export it. Remember a post will need: a
-  method key, a headers key with the Content-Type of 'application/json' and a
-  body key that uses `JSON.stringify` to send the information.
+- Add a `thunk action creator` to add a post to the database using the POST
+  route you created. Make sure you export it. 
+  Remember a post will need: 
+  * a method key
+  * a headers key with the Content-Type of 'application/json'
+  * a body key that uses `JSON.stringify` to send the information.
 
 - Add a regular `action creator` which should receive the information from the
   thunk action creator and use it as the `payload`.
@@ -59,4 +61,3 @@ need to do:
 - Use local state for the tweet information
 - Use a `handleSubmit` function to check if the tweet is empty. If it isn't,
   dispatch the tweet using the thunk action creator.
-- Uncomment the `hr` and the `CreateTweet` Component in the **App.js** file.
